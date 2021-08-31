@@ -1,0 +1,26 @@
+.layout {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
+  .top-bar-wrap {
+
+  }
+
+  .body-wrap {
+    flex: 1;
+    overflow: hidden;
+    display: flex;
+
+    .left-navigation-wrap {
+      overflow: hidden;
+    }
+
+    .content-wrap {
+      flex: 1;
+      overflow: hidden;
+    }
+  }
+}
