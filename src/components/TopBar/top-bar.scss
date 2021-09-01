@@ -32,5 +32,9 @@
 
   .right-container {
     padding: 0 16px;
+
+    .nickname {
+      cursor: pointer;
+    }
   }
 }

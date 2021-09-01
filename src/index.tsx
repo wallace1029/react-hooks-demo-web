@@ -2,8 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import App from './App'
 import reportWebVitals from './reportWebVitals'
-// styles
-import 'antd/dist/antd.css'
+// Import styles.
 import './styles/index.scss'
 
 ReactDOM.render(

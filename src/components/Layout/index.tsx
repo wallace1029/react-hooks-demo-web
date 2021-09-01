@@ -1,5 +1,6 @@
 import {renderRoutes} from 'react-router-config'
 import TopBar from '../TopBar/TopBar'
+import LeftNavigation from '../LeftNavigation'
 import './layout.scss'
 
 const Layout = (props: any) => {
@@ -13,7 +14,7 @@ const Layout = (props: any) => {
       </div>
       <div className={'body-wrap'}>
         <div className={'left-navigation-wrap'}>
-          left navigation
+          <LeftNavigation/>
         </div>
         <div className={'content-wrap'}>
           {renderRoutes(routes)}

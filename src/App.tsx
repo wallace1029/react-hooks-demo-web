@@ -5,14 +5,12 @@ import {Provider} from 'react-redux'
 import store from './store'
 import routes from './routes'
 
-function App() {
-  return (
-    <Router>
-      <Provider store={store}>
-        {renderRoutes(routes)}
-      </Provider>
-    </Router>
-  )
-}
+const App = () => (
+  <Router>
+    <Provider store={store}>
+      {renderRoutes(routes)}
+    </Provider>
+  </Router>
+)
 
 export default App

@@ -1,6 +1,5 @@
 import './top-bar.scss'
-import store from '../../store'
-import {useDispatch} from 'react-redux'
+import {useDispatch, useSelector} from 'react-redux'
 import * as actions from '../../store/actions'
 import logo from '../../assets/logo.svg'
 import {Dropdown, Menu} from 'antd'
@@ -8,7 +7,7 @@ import {DownOutlined} from '@ant-design/icons'
 
 const TopBar = ({history}: any) => {
   const dispatch = useDispatch()
-  const {userInformation} = store.getState()
+  const userInformation = useSelector((state: any) => state.userInformation)
 
   const handleClick = ({key}: any) => {
     if (key === 'logout') {
@@ -38,7 +37,7 @@ const TopBar = ({history}: any) => {
         <Dropdown
           overlay={menu}
           trigger={['click']}>
-          <span>
+          <span className={'nickname'}>
             {userInformation.nickname}
             <DownOutlined style={{fontSize: '12px', verticalAlign: 'middle', marginLeft: '8px'}}/>
           </span>
