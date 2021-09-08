@@ -1,6 +1,7 @@
 import {renderRoutes} from 'react-router-config'
-import TopBar from '../TopBar/TopBar'
-import LeftNavigation from '../LeftNavigation'
+import TopBar from '@/components/TopBar/TopBar'
+import LeftNavigation from '@/components/LeftNavigation'
+
 import './layout.scss'
 
 const Layout = (props: any) => {
